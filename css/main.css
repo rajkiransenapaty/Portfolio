@@ -1,0 +1,152 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #eee;
+  font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
+  color: #666;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 21px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+/* Start styling for header area*/
+header {
+    padding-top:10px;
+}
+header .container{
+  max-width:1000px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 4px #7d97ad;
+  width:100%;
+}
+header .leftCol {
+  width:40%;
+  float:left;
+}
+header .rightCol {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .rightCol .name{
+  padding-bottom:5px;
+  font-weight: normal;
+}
+header .rightCol .pro{
+  font-size:20px;
+  font-weight: normal;
+  line-height: 21px;
+}
+header .logo{
+	background: url("../images/uda_logo.png") no-repeat center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  width:80px;
+  height:80px;
+}
+/* End styling for header area*/
+.cover img{
+  /*width: 100%;
+  height: 400px;*/
+  max-width: 100%;
+  width: auto   9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+h2.xyz {
+  margin: 1.75rem 0;
+  border-bottom: solid 0px #aaa;
+  line-height: 0px;
+  font-weight: normal;
+  color:#627788;
+}
+h2.xyz span{
+  background: #eee;
+  padding-right:10px;
+}
+.container {
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
+/* Start stylying for portfolio items*/
+#items {
+  display: flex; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#items .index {
+  background: #fff;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #D9E1E7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+#items .index img{
+  border-radius: 6px 6px 0 0;
+  border-bottom-right-radius: 40px;
+}
+#items .index .text_block{
+  padding: 1.25rem;
+}
+#items .index h3 {
+  font-size:18px;
+  color:#444;
+  text-align: center;
+}
+#items .index:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+/* End stylying for portfolio items*/
+
+/*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #items .index{
+    width:49%;
+  }
+  #items .index:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #items .index:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+
+/*For devices with width up to 600px*/
+@media screen and (max-width: 600px)  {
+  #items .index{
+    width:99%;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:20px;
+  }
+}
